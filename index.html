@@ -4,16 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="main"></p>
-    <p id="latest"></p>
-    <p id="total"></p>
-    <p id="lastActivity"></p>
-    <p id ="hr"></p>
-    <p id ="she"></p>
-    <p id ="si"></p>
-    
+    <div class="main">
+        <div class="left">
+            <div class="category">
+                <div class="text">
+                    <p class="full__name">Total Year Accidents</p>
+                </div>
+                <div class="number__box">
+                    <p class="counter" id ="total"></p>
+                </div>
+            </div>
+            <div>
+                <p>days of year</p>
+                <p class="mainCounter" id="main"></p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <p>days with out accident</p>
+                <p id="latest"></p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <p> latest activity</p>
+                <p id="lastActivity"></p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="category">
+                <div class="text">
+                    <p class="full__name">Human Resources</p>
+                    <p class="short__name">HR</p>
+                </div>
+                <div class="number__box">
+                    <p class="counter" id ="hr"></p>
+                </div>
+            </div>
+            <div class="category">
+                <div class="text">
+                    <p class="full__name">Safety, Health and Enviroment</p>
+                    <p class="short__name">SHE</p>
+                </div>
+                <div class="number__box">
+                    <p class="counter" id ="she"></p>
+                </div>
+            </div>
+            <div class="category">
+                <div class="text">
+                    <p class="full__name">State Institutions</p>
+                    <p class="short__name">SI</p>
+                </div>
+                <div class="number__box">
+                    <p class="counter" id ="si"></p>
+                </div>
+            </div>
+            <img class="logo" src="logo-01.png">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
