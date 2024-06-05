@@ -7,6 +7,7 @@ const port = 3000;
 
 app.use(express.static('public'));
 
+const millisecondsInDay = 1000 * 60 * 60 * 24;
 let isResetting = false;
 
 let daysWithOut = 0;
@@ -111,7 +112,7 @@ app.get('/reset', (req, res) => {
     isResetting = false; // Reset the flag after writing
     console.log('After reset - lastActivity:', lastActivity, 'daysWithOut:', daysWithOut, 'hr:', hr, 'she:', she, 'si:', si);
 
-    res.send('Attribute has been reset to 0');
+    res.send('You just add a accident, if you want to edit or delete a accident please edit the memory.json file who is into the code directory');
 });
 
 app.listen(port, () => {

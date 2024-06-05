@@ -6,13 +6,14 @@ async function Fetching() {
         seconds.textContent = ` ${x.seconds}`;
 
         const latest = document.getElementById('latest')
-        latest.textContent = `${x.follow}`;
+        latest.textContent = `${x.follow} days without accident`;
 
         const total = document.getElementById('total')
         total.textContent = `${x.total}`
 
         const lastActivity = document.getElementById('lastActivity')
-        lastActivity.textContent = `${x.lastActivity}`
+        
+        lastActivity.textContent = ` last activity ${x.lastActivity}`
 
         const hr = document.getElementById('hr')
         hr.textContent = `${x.hr}`

@@ -51,6 +51,7 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 700;
 }
 
 .logo{
@@ -60,4 +61,10 @@ h1{
 .mainCounter{
     font-size: 150px;
     font-weight: 900;
+    color: #ED227C;
+}
+
+.short__name{
+    color: #ED227C;
+    font-weight: 700;
 }
